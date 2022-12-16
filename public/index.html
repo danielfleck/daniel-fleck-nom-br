@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Daniel Rodrigo Fleck</title>
+</head>
+    <body>
+        <h1>Daniel Rodrigo Fleck</h1>
+        <h2>Objetivo</h2>
+        <p>Criei este site para reunir em um lugar anotações sobre as tecnologias que estudar. Com isso posso realizar consultas
+            e ainda compartilhar este conteúdo com terceiros.</p>
+        <p>Como forma de aprendizado e de, futuramente, verificar a evolução do site, decidi iniciar ele do zero, tentando
+            documentar todas as etapas de construção.</p>
+        <h2>Etapas iniciais</h2>
+        <ul>
+            <li>1. Registro de domínio
+                <ul>
+                    <li>Fiz a aquisição do domínio diretamente do Registro.BR</li>
+                    <li>Dentre as categorias de domínio, entendi que a mais compatível era .nom.br, para pessoas físicas</li>
+                    <li>Essa categoria de domínio exige dois níveis, ou seja, no meu caso, daniel.fleck.nom.br.</li>
+                </ul>
+            </li>
+            <li>2. Criação de servidor na GCP
+                <ul>
+                    <li>Para iniciar o projeto, criei no GCP uma instância de VM com as configurações que se enquadram
+                    nos Limites de uso do Nível gratuito: VM e2-micro não preemptiva, disco permanente padrão de 30 GB e um
+                    endereço IP externo.</li>
+                    <li>Escolhi o SO GNU/Linux e a distribuição Ubuntu, em seguida realizei a atualização do SO e instalação
+                    do servidor web</li>
+                </ul>
+            </li>
+            <li>Configuração de servidor DNS
+                <ul>
+                    <li>Eu decidi utilizar o Servidor de DNS do Registro.BR</li>
+                    <li>A configuração é algo bastante simples, inclui inserir o nome de servidor e o ip externo fornecido
+                    pelo GCP</li>
+                </ul>
+            </li>
+            <li>Configuração de certificados TLS
+                <ul>
+                    <li>Escolhi o Certificado TLS gratuito da Let's Encrypt</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
